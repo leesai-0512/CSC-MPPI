@@ -10,7 +10,7 @@ The algorithm is designed for high-performance execution on GPU using **JAX with
 ## 📰 Publication
 
 **📄 Title:** *CSC-MPPI: A Novel Constrained MPPI Framework with DBSCAN for Reliable Obstacle Avoidance*  
-**🛠 Authors:** Leesai Park¹, Keunwoo Jang²†, and Sanghyun Kim¹³†  
+**🛠 Authors:** Leesai Park¹, Keunwoo Jang²†, and Sanghyun Kim¹³† 
 **📅 Conference:** IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**) 2025  
 - 🔗 **Project Website**: [https://cscmppi.github.io/](https://cscmppi.github.io/)
 - 📹 **YouTube Video**: [Watch Video](https://www.youtube.com/watch?v=NM2Q5UQGleM&feature=youtu.be)
