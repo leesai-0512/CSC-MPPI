@@ -1,0 +1,61 @@
+# CSC-MPPI: A Novel Constrained MPPI Framework with DBSCAN for Reliable Obstacle Avoidance
+
+This repository provides a **JAX-JIT accelerated implementation** of the **Constrained Sampling Cluster MPPI (CSC-MPPI)** algorithm.  
+CSC-MPPI introduces a novel constrained sampling framework based on **DBSCAN clustering** and **primal-dual gradient optimization** to improve obstacle avoidance and constraint satisfaction in sampling-based Model Predictive Path Integral (MPPI) control.
+
+The algorithm is designed for high-performance execution on GPU using **JAX with just-in-time (JIT) compilation**, enabling fast and parallelized trajectory rollouts.
+
+---
+
+## 📰 Publication
+
+**📄 Title:** *CSC-MPPI: A Novel Constrained MPPI Framework with DBSCAN for Reliable Obstacle Avoidance*  
+**🛠 Authors:** Leesai Park¹, Keunwoo Jang²†, and Sanghyun Kim¹³†  
+**📅 Conference:** IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**) 2025  
+
+---
+
+## ⚙️ Prerequisites
+
+- Python 3.10+
+- JAX with GPU support
+- CUDA 11.8+
+- Recommended: Use a virtual environment (e.g., conda)
+
+### ✅ Create Virtual Environment
+
+```bash
+conda create -n csc_mppi python=3.10
+conda activate csc_mppi
+
+```
+
+---
+
+## 🚀 Installation and Run
+
+```bash
+git clone <repository_url>
+cd <repository_name>
+python3 main/env1.py or main/env2.py
+```
+
+---
+
+## 🎬 Experiment Results
+
+### Environment 1 (Simple Static Obstacles)
+
+| CSC-MPPI | Standard MPPI |
+|---------------|----------|
+| ![](gifs/env1_standard_mppi.gif) | ![](gifs/env1_csc-mppi.gif) |
+
+---
+
+### Environment 2 (Narrow Corridor with Complex Constraints)
+
+| CSC-MPPI | CSC-MPPI wo DBSCAN |
+|---------------|----------|
+| ![](gifs/env2_csc-mppi.gif) | ![](gifs/env2_csc-mppi_wo_dbscan.gif) |
+
+---
