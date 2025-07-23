@@ -672,28 +672,8 @@ class JAXMPPIController():
                         self.dt,
                         self.epsilon
                         )
-        
-        # if self.step > 990:
-        #     violated_indices = jnp.where(violation)[0]
-        #     violated_u = v[violation]
-        #     first_u = (noise + u)[violation]
-        #     violated_nu_min = nu_min[violation] 
-        #     violated_nu_max = nu_max[violation]
-        #     print(f"⚠️ 제약 조건 불만족! 총 위반 샘플 수: {len(violated_indices)}")
-        #     for i in range(len(violated_indices)):
-        #         print(f"\n🔍 위반 샘플 index {violated_indices[i]}:")
-        #         print(" - 제어 입력 u 시퀀스:")
-        #         print(first_u[i])  # shape: (T, 2)
-                
-        #         print(" - 원래 샘플링된 노이즈 적용 후 u:")
-        #         print(violated_u[i])  # shape: (T, 2)
-        #         print(" nu min:")
-        #         print(violated_nu_min[i])  # shape: (T, 2)
-        #         print(" nu max:")
-        #         print(violated_nu_max[i])  # shape: (T, 2)
-
-        print("iter: ", self.step)
         noise = v - u
+        
         S = JAXMPPIController.compute_total_cost(
             trajectory, v, u,
             self.ref_path,
