@@ -49,7 +49,7 @@ python3 main/env1.py or main/env2.py
 
 ## 🎬 Experiment Results
 
-### Environment 1 (Simple Static Obstacles)
+### Environment 1
 
 | CSC-MPPI | Standard MPPI |
 |---------------|----------|
@@ -57,7 +57,7 @@ python3 main/env1.py or main/env2.py
 
 ---
 
-### Environment 2 (Narrow Corridor with Complex Constraints)
+### Environment 2
 
 | CSC-MPPI | CSC-MPPI wo DBSCAN |
 |---------------|----------|
