@@ -48,7 +48,7 @@ python3 main/env1.py or main/env2.py
 
 | CSC-MPPI | Standard MPPI |
 |---------------|----------|
-| ![](gifs/env1_standard_mppi.gif) | ![](gifs/env1_csc-mppi.gif) |
+| ![](gifs/env1_csc-mppi.gif) | ![](gifs/env1_standard_mppi.gif) |
 
 ---
 
