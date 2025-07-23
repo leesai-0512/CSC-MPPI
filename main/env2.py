@@ -41,7 +41,7 @@ if __name__ == "__main__":
                        ]
     
     tolerance = jnp.array([0.15,0.25])
-    log_dir = util.get_log_dir(env_name, batch_size)
+    # log_dir = util.get_log_dir(env_name, batch_size)
     execute_dbscan = True
 
     sim = SIM(state=state, radius=radius,dt=dt, ax=ax,fig=fig ,obstacles = obstacles ,obstacles_types=obstacles_types)
@@ -106,19 +106,19 @@ if __name__ == "__main__":
         if frame_count != 1:
             if total_elapsed_time > 0.1:
                  raise RuntimeError(f"time over",total_elapsed_time)
-            util.total_time_txt_data(total_elapsed_time,log_dir)
-            util.dbscan_time_txt_data(mppi.dbscan_elapsed_time,log_dir)
+            # util.total_time_txt_data(total_elapsed_time,log_dir)
+            # util.dbscan_time_txt_data(mppi.dbscan_elapsed_time,log_dir)
 
-        util.opt_traj_txt_data(frame,optimal_traj,log_dir)
-        if execute_dbscan:
-            util.clustered_trajs_txt_data(frame,clustered_trajs,log_dir)
-        else:
-            util.sampled_trajs_txt_data(frame,sampled_trajectory,log_dir)
-        util.constraint_step_txt_data(mppi.step,log_dir)
+        # util.opt_traj_txt_data(frame,optimal_traj,log_dir)
+        # if execute_dbscan:
+        #     # util.clustered_trajs_txt_data(frame,clustered_trajs,log_dir)
+        # else:
+        #     util.sampled_trajs_txt_data(frame,sampled_trajectory,log_dir)
+        # util.constraint_step_txt_data(mppi.step,log_dir)
         if util.goal_check(new_state,ref_path,tolerance):
             print("goal arrive")
-            util.frame_count_txt_data(frame_count,log_dir)
-            util.path_length_txt_data(total_distance,log_dir)
+            # util.frame_count_txt_data(frame_count,log_dir)
+            # util.path_length_txt_data(total_distance,log_dir)
             plt.close(fig)  
 
         
