@@ -19,14 +19,19 @@ The algorithm is designed for high-performance execution on GPU using **JAX with
 
 - Python 3.10+
 - JAX with GPU support
-- CUDA 11.8+
+- CUDA 12.1+
 - Recommended: Use a virtual environment (e.g., conda)
 
 ### ✅ Create Virtual Environment
+Please refer to the [official JAX installation guide](https://docs.jax.dev/en/latest/installation.html) for detailed setup instructions compatible with your system and CUDA version.
 
 ```bash
 conda create -n csc_mppi python=3.10
 conda activate csc_mppi
+
+conda install matplotlib
+pip install -U "jax[cuda12]"
+conda install -c rapidsai -c nvidia -c conda-forge -c defaults  cuml
 
 ```
 
