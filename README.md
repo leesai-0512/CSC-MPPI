@@ -1,6 +1,6 @@
 # CSC-MPPI: A Novel Constrained MPPI Framework with DBSCAN for Reliable Obstacle Avoidance
 
-This repository provides a **JAX-JIT accelerated implementation** of the **Constrained Sampling Cluster MPPI (CSC-MPPI)** algorithm.  
+This repository provides a **PyTorch-accelerated implementation** of the **Constrained Sampling Cluster MPPI (CSC-MPPI)** algorithm.
 CSC-MPPI introduces a novel constrained sampling framework based on **DBSCAN clustering** and **primal-dual gradient optimization** to improve obstacle avoidance and constraint satisfaction in sampling-based Model Predictive Path Integral (MPPI) control.
 
 The algorithm is designed for high-performance execution on GPU using **PyTorch with efficient tensor operations**, enabling fast and parallelized trajectory rollouts.
