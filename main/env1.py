@@ -37,7 +37,7 @@ if __name__ == "__main__":
                        #"circle"
                        ]
     tolerance = torch.tensor([0.15,0.25])
-    log_dir = util.get_log_dir(env_name, batch_size)
+    # log_dir = util.get_log_dir(env_name, batch_size)
     execute_dbscan = True
     sim = SIM(state=state, radius=radius,dt=dt, device=device, ax=ax,fig=fig ,obstacles = obstacles ,obstacles_types=obstacles_types)
     mppi = MPPIController(
